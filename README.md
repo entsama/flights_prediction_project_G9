@@ -67,7 +67,15 @@ Les programmes/logiciels/ressources que nous avons utilisé pour développer not
 * [Excel](https://www.microsoft.com/fr-fr/microsoft-365/excel) - Excel
 * [Power BI](https://www.microsoft.com/fr-fr/power-platform/products/power-bi) - Power BI
 * [Power BI](https://code.visualstudio.com/Visual) - studio code
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Flask 
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Flask
+
+## Archhitecture intermédiaire 
+- Data sources : https://ai-jobs.net/salaries/download/ Cette source de données nous a permi de télécharger des ensembles de données sur les salaires dans le domaine de l'intelligence artificielle. Ces données peuvent être analysées pour comprendre les tendances salariales, les variations géographiques, et les exigences de compétences dans le secteur.
+- BI : Power BI, outil de business intelligence qui permet de visualiser et d'analyser les données. On a pu créer des tableaux de bord interactifs, des rapports et des graphiques pour mieux comprendre et communiquer les résultats de vos analyses de données.
+- Data preparation : Mongodb base de données NoSQL utilisée pour stocker des données non structurées ou semi-structurées. Elle est particulièrement utile pour gérer de grandes quantités de données variées et évolutives, VS Code éditeur de code léger et puissant qui supporte de nombreux langages de programmation. Il est utilisé pour écrire et éditer le code, y compris les scripts de préparation de données et les algorithmes de machine learning.
+, Python langage de programmation polyvalent très utilisé en data science pour la manipulation des données, l'analyse statistique, et le développement de modèles de machine learning. Il dispose de nombreuses bibliothèques comme Pandas, NumPy, Scikit-learn, etc.
+- AI Machine / Machine learning: Visual studio Code, Gradient boosting
+- Interface : Visual studio code, Flask 
 
 ## Versions
 Listez les versions ici 
