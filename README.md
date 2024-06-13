@@ -1,6 +1,8 @@
 # Prédiction des salaires dans les métiers de la data
 
-Dans un monde de plus en plus axé sur les données, les professionnels de la data sont au cœur de nombreuses innovations technologiques et transformations numériques. Les métiers de la data, comprenant les data scientists, data analysts, data engineers, et autres, sont non seulement en forte demande mais aussi diversifiés en termes de compétences requises, responsabilités et, bien sûr, rémunérations. Ce projet vise à prédire les salaires dans les métiers de la data en se basant sur diverses caractéristiques professionnelles et personnelles.
+Dans un monde de plus en plus axé sur les données, les professionnels de la data sont au cœur de nombreuses innovations technologiques et transformations numériques. 
+Les métiers de la data, comprenant les data scientists, data analysts, data engineers, et autres, sont non seulement en forte demande mais aussi diversifiés en termes de compétences requises, responsabilités et, bien sûr, rémunérations. Ce projet vise à prédire les salaires dans les métiers de la data en se basant sur diverses caractéristiques professionnelles et personnelles.
+Ce projet est une application web permettant de prédire les salaires des Data Scientists en fonction de divers paramètres tels que l'année de travail, le niveau d'expérience, le type d'emploi, etc.
 
 # Objectifs Spécifiques
 - Collecte de Données 
@@ -11,27 +13,23 @@ Dans un monde de plus en plus axé sur les données, les professionnels de la da
 
 # Méthodologie 
 1 - Collecte et Préparation des Données :
-Sources de données : https://ai-jobs.net/salaries/download/
-Nettoyage des données : python
+  *Sources de données : https://ai-jobs.net/salaries/download/
+  *Nettoyage des données : python
 
 2- Analyse Exploratoire des Données (EDA) :
-Visualisation des données : Histogrammes, boîtes à moustaches, nuages de points.
-Analyse des corrélations : Matrices de corrélation, heatmaps.
-Identification des tendances : Répartition des salaires par poste, par région, par niveau d'expérience.
-![Les salaires en data](./images/diagramme_flux.png)
-
+  *Visualisation des données : Power BI
 3- Modélisation :
-Sélection des modèles : Régression linéaire, forêts aléatoires, réseaux de neurones, etc.
-Validation des modèles : Cross-validation, métriques de performance (RMSE, MAE).
-Optimisation des hyperparamètres : Recherche sur grille, recherche bayésienne.
+  *Sélection des modèles : Régression linéaire, Gradient Boosting
+  *Validation des modèles 
+  *Optimisation des hyperparamètres
 
 4- Interprétation et Visualisation :
-Importance des features : Techniques comme SHAP et LIME pour comprendre l'influence des variables.
-Visualisation des prédictions : Graphiques interactifs pour comparer les prédictions aux données réelles.
+  *Importance des features 
+  *Visualisation des prédictions : Graphiques interactifs pour comparer les prédictions aux données réelles.
 
 5- Développement de l’Outil :
-Interface utilisateur : Développement d’une application web ou d’un tableau de bord interactif.
-Fonctionnalités : Entrée des caractéristiques utilisateur, affichage des prévisions salariales.
+  *Interface utilisateur : Développement d’une application web ou d’un tableau de bord interactif.
+  *Fonctionnalités : Entrée des caractéristiques utilisateur, affichage des prévisions salariales.
 
 ## Pour commencer
 
@@ -39,45 +37,80 @@ Nous avons récupéré nos données sur le site https://ai-jobs.net/salaries/dow
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
+- Python 3.x
+- Pip (gestionnaire de paquets pour Python)
+- Un navigateur web moderne
 
 ### Installation
 
-Les étapes pour installer votre programme....
+* Clonez le dépôt :
+    Copier le code
+    git clone https://github.com/votre-utilisateur/votre-repo.git
+    cd votre-repo
+* Installez les dépendances :
+    Copier le code
+    pip install -r requirements.txt
+  
+##Configuration
 
-Dites ce qu'il faut faire...
+Préparez l'environnement :
+ Assurez-vous d'avoir le fichier du modèle gb_model.joblib dans le répertoire racine du projet.
 
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
+Structure des fichiers :
 
-
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+- app.py : Script principal pour lancer l'application Flask.
+- data_loader.py : Script pour charger et traiter les données.
+- train_model.py : Script pour entraîner le modèle.
+- gb_model.joblib : Modèle de machine learning pré-entraîné.
+- static/css/index.css : Fichier CSS pour le style de la page.
+- static/js/index.js : Fichier JavaScript pour la logique du formulaire.
+- templates/index.html : Fichier HTML pour l'interface utilisateur.
 
 ## Démarrage
+Lancer l'application :
+  bash
+  Copier le code
+  python app.py
+Accédez à l'application :
+Ouvrez votre navigateur web et allez à l'adresse suivante :
+  arduino
+  Copier le code
+  http://localhost:5000
+  
+## Utilisation
+Remplissez le formulaire :
+Sur la page d'accueil, remplissez le formulaire avec les informations requises (année de travail, niveau d'expérience, type d'emploi, etc.).
 
-Dites comment faire pour lancer votre projet
+Soumettez le formulaire :
+Cliquez sur le bouton "Prédire le Salaire" pour obtenir la prédiction de salaire.
 
-## Fabriqué avec
+## Voir le résultat :
+Le résultat s'affichera en dessous du formulaire, montrant le salaire prédit.
 
-Les programmes/logiciels/ressources que nous avons utilisé pour développer notre projet
+## Technologies utilisées 
+
+Les programmes/logiciels/ressources que nous avons utilisés pour développer notre projet
 
 * [Excel](https://www.microsoft.com/fr-fr/microsoft-365/excel) - Excel
 * [Power BI](https://www.microsoft.com/fr-fr/power-platform/products/power-bi) - Power BI
-* [Power BI](https://code.visualstudio.com/Visual) - studio code
+* [Power BI](https://code.visualstudio.com/Visual) - Visual studio code
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Flask
 * [Flask](https://www.mongodb.com/fr-fr) - MongoDB
+* [Flask](https://www.postman.com/) - Postman
 
-## Archhitecture intermédiaire 
-- Data sources : https://ai-jobs.net/salaries/download/ , Cette source de données nous a permi de télécharger des ensembles de données sur les salaires dans le domaine de l'intelligence artificielle. Ces données peuvent être analysées pour comprendre les tendances salariales, les variations géographiques, et les exigences de compétences dans le secteur.
-- BI : Power BI, outil de business intelligence qui permet de visualiser et d'analyser les données. On a pu créer des tableaux de bord interactifs, des rapports et des graphiques pour mieux comprendre et communiquer les résultats de vos analyses de données.
-- Data preparation : Mongodb base de données NoSQL utilisée pour stocker des données non structurées ou semi-structurées. Elle est particulièrement utile pour gérer de grandes quantités de données variées et évolutives, VS Code éditeur de code léger et puissant qui supporte de nombreux langages de programmation. Il est utilisé pour écrire et éditer le code, y compris les scripts de préparation de données et les algorithmes de machine learning.
-, Python langage de programmation polyvalent très utilisé en data science pour la manipulation des données, l'analyse statistique, et le développement de modèles de machine learning. Il dispose de nombreuses bibliothèques comme Pandas, NumPy, Scikit-learn, etc.
-- AI Machine / Machine learning: Gradient boosting, c'est une technique de machine learning utilisée pour les problèmes de régression et de classification. Il construit un modèle prédictif en combinant plusieurs modèles plus simples (comme les arbres de décision) de manière séquentielle pour corriger les erreurs des modèles précédents, ce qui améliore la précision.
-- Interface : Flask, c'est micro-framework web en Python qui permet de développer des applications web légères et flexibles. Il est utilisé pour créer des interfaces utilisateur, des API RESTful et pour servir le modèle de machine learning dans une application web.
+## Architecture
+- Data sources : https://ai-jobs.net/salaries/download/ , Cette source de données nous a permi de télécharger des ensembles de données sur les salaires dans le domaine de l'intelligence artificielle. 
+- BI : Power BI, outil de business intelligence qui nous a permis de visualiser et d'analyser les données. 
+- Data preparation : Mongodb c'est la base de données NoSQL utilisée pour stocker des données non structurées ou semi-structurées. VS Code, éditeur de code léger et puissant qui supporte de nombreux langages de programmation. Python, langage de programmation polyvalent très utilisé en data science pour la manipulation des données, l'analyse statistique, et le développement de modèles de machine learning. 
+- AI Machine / Machine learning: Après avoir testé d'autres modèles dont la régression linéaire, nous avons choisi le modèle Gradient boosting, c'est une technique de machine learning utilisée pour les problèmes de régression et de classification. Il construit un modèle prédictif en combinant plusieurs modèles plus simples (comme les arbres de décision) de manière séquentielle pour corriger les erreurs des modèles précédents, ce qui améliore la précision en terme de prediction des salaires.
+- Interface : Flask, qui est un micro-framework web en Python qui nous a permis de développer l'interface web. Il est utilisé pour créer des interfaces utilisateur, des API RESTful et pour servir le modèle de machine learning dans une application web.
 
+## Impact du Projet
+Ce projet apportera une valeur significative aux professionnels de la data, aux recruteurs et aux entreprises en fournissant une vision claire et précise des tendances salariales. Il aidera les individus à mieux négocier leurs salaires et les employeurs à structurer des offres compétitives et équitables.
+Avec une approche méthodique et axée sur les données, ce projet contribuera à une meilleure compréhension du marché du travail dans les métiers de la data, facilitant ainsi une prise de décision informée pour tous les acteurs concernés.
+
+## Contribution
+Les contributions sont les bienvenues ! Veuillez créer une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
 
 ## Versions
 Listez les versions ici 
@@ -89,15 +122,11 @@ _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
 Les auteurs du projet sont :
-* **Mamakan COULIBALY**
-* **Estelle NTSAMA**
-* **Ulukbek OMOEV**
+* **Mamakan COULIBALY** : Responsable technique (focalisée sur la recherche de l'API, la configuration des environnements, et les spécifications techniques).
+* **Estelle NTSAMA** : Responsable de la gestion de projet et de la coordination (supervisation de toutes les tâches, participation à la rédaction du plan et des spécifications).
+* **Ulukbek OMOEV** : Responsable des données et de l'intégration (focalisé sur la documentation de l'API, les premières requêtes, et la préparation des données).
 
 ## License
 Ce projet a été réalisé dans le cadre d'un devoir académique !
-
-## Impact du Projet
-Ce projet apportera une valeur significative aux professionnels de la data, aux recruteurs et aux entreprises en fournissant une vision claire et précise des tendances salariales. Il aidera les individus à mieux négocier leurs salaires et les employeurs à structurer des offres compétitives et équitables.
-Avec une approche méthodique et axée sur les données, ce projet contribuera à une meilleure compréhension du marché du travail dans les métiers de la data, facilitant ainsi une prise de décision informée pour tous les acteurs concernés.
 
 
