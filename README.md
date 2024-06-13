@@ -51,7 +51,7 @@ Nous avons récupéré nos données sur le site https://ai-jobs.net/salaries/dow
     Copier le code
     pip install -r requirements.txt
   
-##Configuration
+## Configuration
 
 Préparez l'environnement :
  Assurez-vous d'avoir le fichier du modèle gb_model.joblib dans le répertoire racine du projet.
@@ -104,6 +104,10 @@ Les programmes/logiciels/ressources que nous avons utilisés pour développer no
 - Data preparation : Mongodb c'est la base de données NoSQL utilisée pour stocker des données non structurées ou semi-structurées. VS Code, éditeur de code léger et puissant qui supporte de nombreux langages de programmation. Python, langage de programmation polyvalent très utilisé en data science pour la manipulation des données, l'analyse statistique, et le développement de modèles de machine learning. 
 - AI Machine / Machine learning: Après avoir testé d'autres modèles dont la régression linéaire, nous avons choisi le modèle Gradient boosting, c'est une technique de machine learning utilisée pour les problèmes de régression et de classification. Il construit un modèle prédictif en combinant plusieurs modèles plus simples (comme les arbres de décision) de manière séquentielle pour corriger les erreurs des modèles précédents, ce qui améliore la précision en terme de prediction des salaires.
 - Interface : Flask, qui est un micro-framework web en Python qui nous a permis de développer l'interface web. Il est utilisé pour créer des interfaces utilisateur, des API RESTful et pour servir le modèle de machine learning dans une application web.
+
+##  Comparaison avec les autres modèles étudiés 
+
+
 
 ## Impact du Projet
 Ce projet apportera une valeur significative aux professionnels de la data, aux recruteurs et aux entreprises en fournissant une vision claire et précise des tendances salariales. Il aidera les individus à mieux négocier leurs salaires et les employeurs à structurer des offres compétitives et équitables.
