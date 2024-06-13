@@ -134,7 +134,7 @@ Modèle	Précision	Rappel	F1-score	AUC-ROC
 Gradient Boosting	92%	90%	91%	0.95
 Random Forest	89%	87%	88%	0.92
 Decision Tree Classifier	85%	83%	84%	0.88
-[Tableau comparatif](assets/Comparaison.JPG)
+[Tableau comparatif](Comparaison.JPG)
 Ces résultats démontrent que le Gradient Boosting est le modèle le mieux adapté pour notre projet de prédiction de salaires, offrant un équilibre optimal entre précision, rappel et capacité de généralisation.
 
 ## Méthodologie
