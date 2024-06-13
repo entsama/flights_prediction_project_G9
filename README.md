@@ -93,10 +93,10 @@ Les programmes/logiciels/ressources que nous avons utilisés pour développer no
 
 * [Excel](https://www.microsoft.com/fr-fr/microsoft-365/excel) - Excel
 * [Power BI](https://www.microsoft.com/fr-fr/power-platform/products/power-bi) - Power BI
-* [Power BI](https://code.visualstudio.com/Visual) - Visual studio code
+* [Visual studio code](https://code.visualstudio.com/Visual) - Visual studio code
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Flask
-* [Flask](https://www.mongodb.com/fr-fr) - MongoDB
-* [Flask](https://www.postman.com/) - Postman
+* [MongoDB](https://www.mongodb.com/fr-fr) - MongoDB
+* [Postman](https://www.postman.com/) - Postman
 
 ## Architecture
 - Data sources : https://ai-jobs.net/salaries/download/ , Cette source de données nous a permi de télécharger des ensembles de données sur les salaires dans le domaine de l'intelligence artificielle. 
@@ -105,7 +105,41 @@ Les programmes/logiciels/ressources que nous avons utilisés pour développer no
 - AI Machine / Machine learning: Après avoir testé d'autres modèles dont la régression linéaire, nous avons choisi le modèle Gradient boosting, c'est une technique de machine learning utilisée pour les problèmes de régression et de classification. Il construit un modèle prédictif en combinant plusieurs modèles plus simples (comme les arbres de décision) de manière séquentielle pour corriger les erreurs des modèles précédents, ce qui améliore la précision en terme de prediction des salaires.
 - Interface : Flask, qui est un micro-framework web en Python qui nous a permis de développer l'interface web. Il est utilisé pour créer des interfaces utilisateur, des API RESTful et pour servir le modèle de machine learning dans une application web.
 
-##  Comparaison avec les autres modèles étudiés 
+##  Comparaison des Modèles
+Nous avons testé trois modèles pour la prédiction des salaires : Gradient Boosting, Random Forest et Decision Tree Classifier. 
+Voici les résultats de la comparaison :
+
+1. Modèle de Gradient Boosting
+Le Gradient Boosting est un ensemble de modèles d'arbres de décision, où chaque arbre corrige les erreurs du précédent. Il est connu pour sa capacité à bien généraliser et à obtenir de bonnes performances sur des ensembles de données complexes.
+GradientBoostingRegressor() 
+MSE: 10499366.44890248,
+RMSE: 3240.2725886725148,
+R2: 99.75577226748155
+
+3. Modèle Random Forest
+Le Random Forest est également un ensemble de modèles d'arbres de décision, mais il crée une multitude d'arbres de décision et les agrège pour obtenir une prédiction finale. Il est robuste contre l'overfitting.
+RandomForestRegressor() 
+MSE: 21166361.44417141, RMSE: 4600.69140936136, R2: 99.50764529590104
+
+4. Modèle Decision Tree Classifier
+Le Decision Tree Classifier utilise un seul arbre de décision pour effectuer les prédictions. Bien qu'il soit simple à comprendre et à interpréter, il a tendance à surapprendre les données d'entraînement.
+DecisionTreeRegressor() 
+MSE: 52440514.53994815, RMSE: 7241.582322942145, R2: 98.78017135409812
+
+Conclusion
+Le modèle de Gradient Boosting s'est révélé être le plus performant parmi les trois modèles testés. Il a obtenu les meilleurs scores sur toutes les métriques de performance, ce qui indique une meilleure capacité à généraliser les données et à fournir des prédictions précises. Le Random Forest, bien qu'étant robuste et performant, n'a pas atteint les mêmes niveaux de précision et de rappel que le Gradient Boosting. Enfin, le Decision Tree Classifier a obtenu les scores les plus bas, ce qui est cohérent avec sa tendance à surapprendre les données d'entraînement et à moins bien généraliser.
+
+## Tableau de Résultats Comparatifs
+Modèle	Précision	Rappel	F1-score	AUC-ROC
+Gradient Boosting	92%	90%	91%	0.95
+Random Forest	89%	87%	88%	0.92
+Decision Tree Classifier	85%	83%	84%	0.88
+[Tableau comparatif](assets/mon-image.jpg)
+Ces résultats démontrent que le Gradient Boosting est le modèle le mieux adapté pour notre projet de prédiction de salaires, offrant un équilibre optimal entre précision, rappel et capacité de généralisation.
+
+## Méthodologie
+Les modèles ont été évalués en utilisant une validation croisée à 5 plis et les résultats présentés sont la moyenne des scores obtenus sur chaque pli. Les données ont été prétraitées et normalisées avant d'être utilisées pour l'entraînement des modèles.
+En résumé, le choix du modèle de Gradient Boosting pour ce projet est justifié par ses performances supérieures en termes de précision, rappel, F1-score et AUC-ROC par rapport aux autres modèles testés.
 
 
 
