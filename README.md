@@ -31,7 +31,7 @@ Ce projet est une application web permettant de prédire les salaires des Data S
   *Interface utilisateur : Développement d’une application web ou d’un tableau de bord interactif.
   *Fonctionnalités : Entrée des caractéristiques utilisateur, affichage des prévisions salariales.
   
-[Planning des taches](Planning des taches.JPG)
+[Planning des taches](Planningdestaches.JPG)
  
 
 ## Pour commencer
